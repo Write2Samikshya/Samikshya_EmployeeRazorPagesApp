@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace EmployeeRazorPagesApp.Services
 {
@@ -28,5 +29,12 @@ namespace EmployeeRazorPagesApp.Services
         {
             return _EmployeeList;
         }
+
+        public Employee GetEmployeebyID(int id)
+        {
+            return _EmployeeList.FirstOrDefault(e => e.ID == id);
+
+        }
+
     }
 }
