@@ -8,6 +8,8 @@ namespace EmployeeRazorPagesApp.Services
     {
         IEnumerable<Employee> GetEmployees();
 
+        Employee GetEmployeebyID(int id);
+
 
 
     }
