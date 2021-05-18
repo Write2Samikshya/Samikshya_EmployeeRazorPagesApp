@@ -29,10 +29,14 @@
                 @*<a href="#" class="btn btn-primary m-1">View</a>*@
 
                 <a asp-page="/EmployeeDetails/Details" asp-route-ID="@employee.ID"
-                   class="btn btn-primary m-1">View</a>               
+                   class="btn btn-primary m-1">View</a>
 
                 <a asp-page="/EmployeeDetails/EditEmp" asp-route-ID="@employee.ID"
                    class="btn btn-primary m-1">EditEmp</a>
+
+
+                <a asp-page="/EmployeeDetails/EditTry" asp-route-ID="@employee.ID"
+                   class="btn btn-primary m-1">EditTry</a>
 
             </div>
         </div>

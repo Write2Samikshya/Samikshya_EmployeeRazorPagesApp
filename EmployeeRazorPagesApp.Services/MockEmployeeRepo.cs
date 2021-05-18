@@ -44,6 +44,7 @@ namespace EmployeeRazorPagesApp.Services
                 employee.Name = UpdatedEmployee.Name;
                 employee.Email = UpdatedEmployee.Email;
                 employee.Department = UpdatedEmployee.Department;
+                employee.Photopath = UpdatedEmployee.Photopath;
             }
 
             return employee;
