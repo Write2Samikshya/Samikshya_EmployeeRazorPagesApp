@@ -10,8 +10,7 @@
 
 <style>
     .btn{
-       width:75px;
-
+       width:85px;
     }
 </style>
 
@@ -30,17 +29,7 @@
                 @*<a href="#" class="btn btn-primary m-1">View</a>*@
 
                 <a asp-page="/EmployeeDetails/Details" asp-route-ID="@employee.ID"
-                   class="btn btn-primary m-1">View</a>
-
-                <a asp-page="/EmployeeDetails/Edit" asp-route-ID="@employee.ID"
-                   class="btn btn-primary m-1">Edit</a>
-
-                <a href="#" class="btn btn-danger m-1">Delete</a>
-                <a asp-page="/EmployeeDetails/Edit2" asp-route-ID="@employee.ID"
-                   class="btn btn-primary m-1">Edit2</a>
-
-                <a asp-page="/EmployeeDetails/EditTrial" asp-route-ID="@employee.ID"
-                   class="btn btn-primary m-1">EditTrial</a>
+                   class="btn btn-primary m-1">View</a>               
 
                 <a asp-page="/EmployeeDetails/EditEmp" asp-route-ID="@employee.ID"
                    class="btn btn-primary m-1">EditEmp</a>
