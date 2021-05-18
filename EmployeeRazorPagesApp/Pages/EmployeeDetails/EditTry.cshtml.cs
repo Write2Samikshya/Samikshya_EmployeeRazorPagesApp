@@ -17,6 +17,7 @@ namespace EmployeeRazorPagesApp.Pages.EmployeeDetails
         private readonly IEmployeeRepo iemployeeRepo;
         private readonly IWebHostEnvironment webHostEnvironment;
 
+        [BindProperty]
         public Employee EmpEditProperty { get; set; }
 
         [BindProperty]
