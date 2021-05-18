@@ -20,9 +20,16 @@ namespace EmployeeRazorPagesApp.Pages.EmployeeDetails
         {
             this._Emprepo = employeeRepo;
         }
-        public void OnGet(int ID)
+        public IActionResult OnGet(int ID)
         {
             EmpPropertydeatils = _Emprepo.GetEmployeebyID(ID);
+
+            if(EmpPropertydeatils  == null)
+            {
+                return  RedirectToPage ("/Notound");
+
+            }
+            return Page();
         }
     }
 }
