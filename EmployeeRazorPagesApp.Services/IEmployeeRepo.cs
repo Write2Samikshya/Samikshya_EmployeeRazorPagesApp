@@ -9,6 +9,9 @@ namespace EmployeeRazorPagesApp.Services
         IEnumerable<Employee> GetEmployees();
 
         Employee GetEmployeebyID(int id);
+        Employee Update(Employee UpdatedEmployee);
+
+        Employee Add(Employee newEmployee);
 
 
 

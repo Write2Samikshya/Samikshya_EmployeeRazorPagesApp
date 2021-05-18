@@ -32,5 +32,12 @@ namespace EmployeeRazorPagesApp.Pages.EmployeeDetails
 
             return Page();
         }
+
+        public IActionResult OnPost(Employee emp)
+        {
+            EmployeeEditProperty = iemployeerepo.Update(emp);
+            return RedirectToPage("Index");
+
+        }
     }
 }
